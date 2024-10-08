@@ -15,7 +15,9 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/users");
+        const response = await fetch(
+          "https://react-task-7-db.onrender.com/users"
+        );
         const data = await response.json();
         setRows(data);
       } catch (error) {

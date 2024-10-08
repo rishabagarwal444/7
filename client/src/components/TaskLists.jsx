@@ -23,7 +23,9 @@ const TaskLists = () => {
     const fetchTaskLists = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/tasklists");
+        const response = await axios.get(
+          "https://react-task-7-db.onrender.com/tasklists"
+        );
         const formattedData = [];
 
         response.data.forEach((user) => {

@@ -5,6 +5,7 @@ import Users from "./components/Users";
 import TaskLists from "./components/TaskLists";
 import Tasks from "./components/Tasks";
 import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
         <>
           <Navbar onLogout={handleLogout} />
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/users" element={<Users />} />
             <Route path="/task-lists" element={<TaskLists />} />
             <Route path="/tasks" element={<Tasks />} />

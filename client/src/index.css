@@ -29,3 +29,6 @@ body {
 h2 {
   margin: 20px 0;
 }
+full-height {
+  height: 100vh;
+}
